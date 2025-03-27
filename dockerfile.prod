@@ -27,8 +27,6 @@ RUN npm run build
 
 RUN npm ci -f --only=production && npm cache clean --force
 
-RUN npx prisma generate
-
 
 
 # Crear la imagen final de Docker
